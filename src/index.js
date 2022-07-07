@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import App1 from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-
+// 标题 banner 横幅
 function FancyBorder(props) {
   return (
     <div className={'FancyBorder FancyBorder-' + props.color}>
@@ -27,11 +25,13 @@ function WelcomeDialog() {
     </FancyBorder>
   );
 }
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <WelcomeDialog />
-    <App></App>
+    <App>
+    </App>
     
 
   </React.StrictMode>

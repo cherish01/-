@@ -1,48 +1,22 @@
 import './App.css';
+import React, { Component } from 'react';
+import Exhibit from './Exhibit';
+// import ipify from 'ipify';
 
 
-function Contacts() {
-  return <div className="Contacts" ><App1/></div>;
-}
-
-function Chat() {
-  return <div className="Chat" />;
-}
-
-function SplitPane(props) {
-  return (
-    <div className="SplitPane">
-      <div className="SplitPane-left">
-        {props.left}
-      </div>
-      <div className="SplitPane-right">
-        {props.right}
-      </div>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <SplitPane
-      left={
-        <Contacts />
-      }
-      right={
-        <Chat />
-      } />
-  );
-}
-
-function App1() {
-  return (
-    
-    <div>
-      <h1>12345</h1>
-       hello word 你好！
-    </div>
-
-  );
+class App extends Component {
+  render() {
+      return (
+          <div className="App">
+              <Exhibit name="ipv4,,,,,,,,,,," children="await ipify()">
+              
+              </Exhibit>
+              <Exhibit name="IPV6,............" children="await ipify({useIPv6: false})">
+               
+                </Exhibit>
+          </div>
+      );
+  }
 }
 
 
