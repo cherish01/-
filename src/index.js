@@ -30,7 +30,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <WelcomeDialog />
-    <App>
+    <App> 
+      1、暂存 2、提交 3、同步更新。
     </App>
     
 
