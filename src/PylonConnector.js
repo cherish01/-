@@ -7,13 +7,15 @@ class PylonConnector extends Component {
         super(props);
         this.state = {
             latency: null
-        };
-    }
+        }; 
+        // 初始化
+    } 
 
     componentDidMount() {
         client.onmessage = (message) => {
             this.setState({
                 latency: new Date().getTime() - message.data
+                // 延迟
             })
         };
     }

@@ -6,6 +6,7 @@ class AddressDisplay extends Component {
         this.state = {
             url: props.url,
             ipAddress: null
+            // 通过url获取ipv4 ipv6
         };
     }
 
