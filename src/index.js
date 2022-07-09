@@ -31,7 +31,7 @@ root.render(
   <React.StrictMode>
     <WelcomeDialog />
     <App> 
-      1、暂存 2、提交 3、同步更新。
+      {/* 1、暂存 2、提交 3、同步更新。 */}
     </App>
     
 
