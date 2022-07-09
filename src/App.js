@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import Exhibit from './Exhibit';
-// import ipify from 'ipify';
+import PylonConnector from './PylonConnector';
 import AddressDisplay from './AddressDisplay';
 
 class App extends Component {
@@ -13,6 +13,9 @@ class App extends Component {
               </Exhibit>
               <Exhibit name="IPV6,............" children="await ipify({useIPv6: false})">
               <AddressDisplay url='https://api64.ipify.org?format=json' />
+                </Exhibit>
+                <Exhibit name=" Pylon 的数据包延迟" >
+                <PylonConnector />
                 </Exhibit>
           </div>
       );
